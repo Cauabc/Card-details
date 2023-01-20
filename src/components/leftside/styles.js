@@ -120,8 +120,8 @@ export const BackCard = styled.div`
         z-index: 20;
         @media screen and (max-width: 430px) {
             left: 55vw;
-            bottom: 10vh;
-            font-size: .8rem;
+            bottom: 9.7vh;
+            font-size: .9rem;
 
         }
     }
