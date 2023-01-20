@@ -118,11 +118,16 @@ export const BackCard = styled.div`
         letter-spacing: 2px;
         font-size: 1.1em;
         z-index: 20;
+
+        @media screen and (max-width: 360px) {
+            left: 55vw;
+            bottom: 4.4rem;
+            font-size: .8rem;
+        }
         @media screen and (max-width: 430px) {
             left: 55vw;
-            bottom: 9.7vh;
-            font-size: .9rem;
-
+            bottom: 19.5vw;
+            font-size: .8rem;
         }
     }
 
@@ -135,7 +140,7 @@ export const BackCard = styled.div`
     }
     @media screen and (max-width: 430px) {
         left:19vw;
-        top: -21vh;
+        top: -45vw;
     }
 
 
