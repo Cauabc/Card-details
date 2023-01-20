@@ -43,6 +43,7 @@ export const FrontCard = styled.div`
 
 
     .cardNumber{
+        width: 100vw;
         position: absolute;
         color: #fff;
         font-size: 2.1em;
