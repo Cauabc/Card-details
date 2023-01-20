@@ -16,25 +16,6 @@ export const Container = styled.div`
         height: 35vh;
         background-image: url("/images/bg-main-mobile.png");
     }
-
-    /* .frontCard, .backCard{
-        position: absolute;
-        width: 26vw;
-    }
-
-    .frontCard{
-        top: 20vh;
-        left: 18vw;
-    }
-
-    .backCard{
-        top: 54vh;
-        left: 25vw;
-    }
-
-    .cardNumber{
-        color: #fff;
-    } */
 `
 
 export const FrontCard = styled.div`
