@@ -9,10 +9,23 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+body,
+html {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 430px) and (orientation : portrait) {
 
   body,
   html {
-    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 430px) and (orientation : landscape) {
+
+  body,
+  html {
+    overflow: auto;
   }
 }

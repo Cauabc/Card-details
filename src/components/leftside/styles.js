@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    user-select: none;
     font-family: 'Space Grotesk', sans-serif;
     position: relative;
     width: 35vw;
-    height: 100vw;
+    height: 100vh;
     background-image: url("/images/bg-main-desktop.png");
     background-position: center;
     background-size: cover;
