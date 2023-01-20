@@ -140,7 +140,7 @@ export const BackCard = styled.div`
     }
     @media screen and (max-width: 430px) {
         left:19vw;
-        top: -45vw;
+        top: -42vw;
     }
 
 
