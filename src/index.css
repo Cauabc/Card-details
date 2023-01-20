@@ -8,3 +8,11 @@ body {
   min-height: 100vh;
   font-family: Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 430px) and (orientation : portrait) {
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
