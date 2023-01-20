@@ -4,7 +4,7 @@ export const Container = styled.div`
     font-family: 'Space Grotesk', sans-serif;
     position: relative;
     width: 35vw;
-    height: 100vh;
+    height: 100vw;
     background-image: url("/images/bg-main-desktop.png");
     background-position: center;
     background-size: cover;
