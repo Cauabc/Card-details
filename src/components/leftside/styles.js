@@ -55,6 +55,7 @@ export const FrontCard = styled.div`
         position: absolute;
         left: 21px;
         bottom: 30px;
+        text-transform: uppercase;
         @media screen and (max-width: 430px) {
             font-size: .7em;
             bottom: 19px;
