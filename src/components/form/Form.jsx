@@ -97,8 +97,8 @@ export const Form = () => {
                     </S.ExpirationDateInputs>
                 </S.ExpirationDate>
                 <S.CVV>
-                    <label htmlFor="CVCNumber">CVC</label>
-                    <input value={cvv} onInput={handleCVVChecker} type="number" name="CVCNumber" id="CVCNumber" className={isEmptyCVV ? 'empty' : 'fill'} placeholder="e.g. 123" maxLength={3} onChange={(e) => setCvv(e.target.value)}/>
+                    <label htmlFor="CVVNumber">CVV</label>
+                    <input value={cvv} onInput={handleCVVChecker} type="number" name="CVVNumber" id="CVVNumber" className={isEmptyCVV ? 'empty' : 'fill'} placeholder="e.g. 123" maxLength={3} onChange={(e) => setCvv(e.target.value)}/>
                 </S.CVV>
             </S.expAndCVV>
             <button onClick={handleConfirm}>CONFIRM</button>
