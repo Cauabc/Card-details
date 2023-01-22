@@ -13,7 +13,7 @@ function App() {
   const [mm, setMm] = useState()
   const [yy, setYy] = useState()
   const [isConfirmed, setIsConfirmed] = useState(false)
-  const [isEmpty, setIsEmpty] = useState(false)
+  const [isEmpty, setIsEmpty] = useState(true)
 
   return (
     <CNameContext.Provider value={{ cardName, setCardName, cardNumber, setCardNumber, cvv, setCvv, mm, setMm, yy, setYy, isConfirmed, setIsConfirmed, isEmpty, setIsEmpty }}>

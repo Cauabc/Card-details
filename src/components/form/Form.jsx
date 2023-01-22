@@ -76,6 +76,7 @@ export const Form = () => {
                 setIsEmptyMM(false)
             }
         }
+
         if (!isEmpty && !isEmptyCVV && !isEmptyMM && !isEmptyYY && !isEmptyNumber){
             setIsConfirmed(true)
         }
