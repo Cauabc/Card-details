@@ -3,7 +3,7 @@ import { useContext, useState } from 'react'
 import CNameContext from '../../contexts/CNameContext'
 export const Form = () => {
 
-    const { cardName, setCardName, cardNumber, setCardNumber, cvv, setCvv, mm, setMm, yy, setYy, setIsConfirmed, isEmpty, setIsEmpty } = useContext(CNameContext)
+    const { cardName, setCardName, cardNumber, setCardNumber, cvv, setCvv, mm, setMm, yy, setYy, setIsConfirmed, isEmpty, setIsEmpt, canPass, setCanPass } = useContext(CNameContext)
 
     const [isEmptyNumber, setIsEmptyNumber] = useState(false)
     const [isEmptyMM, setIsEmptyMM] = useState(false)
@@ -60,6 +60,7 @@ export const Form = () => {
         cvv ? setIsEmptyCVV(false) : setIsEmptyCVV(true)
         if (cvv){
             cvv.length < 3 ? setIsEmptyCVV(true) : setIsEmptyCVV(false)
+            setCanPass(true)
         }
         yy ? setIsEmptyYY(false) : setIsEmptyYY(true)
         if (yy){
@@ -77,7 +78,7 @@ export const Form = () => {
             }
         }
 
-        if (!isEmpty && !isEmptyCVV && !isEmptyMM && !isEmptyYY && !isEmptyNumber){
+        if (!isEmpty && !isEmptyCVV && !isEmptyMM && !isEmptyYY && !isEmptyNumber && canPass){
             setIsConfirmed(true)
         }
     }
