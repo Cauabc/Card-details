@@ -68,9 +68,10 @@ export const Form = () => {
             yy < 23 ? setIsEmptyYY(true) : setIsEmptyYY(false)
         }
         mm ? setIsEmptyMM(false) : setIsEmptyMM(true)
+        mm > 12 ? setIsEmptyMM(true) : setIsEmptyMM(false) 
+
         if (mm){
             mm.length < 2 ? setIsEmptyMM(true) : setIsEmptyMM(false)
-            mm > 12 ? setIsEmptyMM(true) : setIsEmptyMM(false)
             if (Number(mm) == month + 1 && yy == year){
                 setIsEmptyMM(true)
             } else{
